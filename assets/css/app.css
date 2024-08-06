@@ -3120,95 +3120,31 @@ h1.post__title {
   color: var(--light-color3) !important;
 }
 
-.medicx-section-padding2 {
-  width: 100%;
-}
-
-.medicx-counter-wrap {
+.bmix-counter-wrap {
   display: flex;
-  text-align: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
+  text-align: center;
 }
-@media (max-width: 991px) {
-  .medicx-counter-wrap {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 767px) {
-  .medicx-counter-wrap {
-    justify-content: center;
-  }
-}
-.medicx-counter-data h2 {
-  color: var(--white-bg);
-}
-.medicx-counter-data p {
-  color: var(--white-bg);
-}
-.medicx-counter-number {
-  font-size: 70px;
+.bmix-counter-number {
+  font-size: 100px;
   line-height: 1.07em; /* 116.667% */
   letter-spacing: -0.005em;
   font-weight: 700;
-  margin-bottom: 15px;
   color: var(--white-color);
 }
 @media (max-width: 1199px) {
-  .medicx-counter-number {
+  .bmix-counter-number {
     font-size: 60px;
     letter-spacing: -3px;
   }
 }
 @media (max-width: 991px) {
-  .medicx-counter-number {
+  .bmix-counter-number {
     font-size: 48px;
     font-weight: 600;
   }
-}
-.medicx-counter-item {
-  gap: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.medicx-counter-data2 {
-  width: 200px;
-  text-align: left;
-}
-.medicx-counter-data2 p {
-  color: var(--white-color);
-}
-@media (max-width: 1199px) {
-  .medicx-counter-data2 p {
-    font-size: 18px;
-  }
-}
-.medicx-counter-data2 .medicx-counter-number {
-  margin-bottom: 5px;
-}
-
-.medicx-faq-section {
-  position: relative;
-  z-index: 1;
-}
-
-.medicx-counter--wrapper {
-  text-align: center;
-}
-.medicx-counter-data {
-  padding: 40px 65px;
-  border-radius: 10px;
-  text-align: center;
-  background: var(--accent-color);
-}
-@media (max-width: 991px) {
-  .medicx-counter-data {
-    margin-bottom: 24px;
-  }
-}
-.medicx-counter-data h2 {
-  margin-bottom: 15px;
 }
 
 .medicx-iconbox-wrap {
@@ -4349,6 +4285,19 @@ a.medicx-connect-login img {
   }
 }
 
+.bmix-about-thumb {
+  position: relative;
+}
+.bmix-about-card {
+  position: absolute;
+  top: 150px;
+  right: 70px;
+  overflow: hidden;
+  transform: translatey(0px);
+  -webkit-animation: updown 3s ease-in-out infinite;
+  animation: updown 3s ease-in-out infinite;
+}
+
 .medicx-career-content-wrapper {
   border: 1px solid var(--light-color);
   padding: 30px;
@@ -4793,11 +4742,11 @@ img.plasicon {
 }
 
 .bmix-section-padding {
-  padding: 130px 0 106px;
+  padding: 130px 0 56px;
 }
 @media (max-width: 991px) {
   .bmix-section-padding {
-    padding: 100px 0 76px;
+    padding: 100px 0 56px;
   }
 }
 @media (max-width: 767px) {
@@ -4805,21 +4754,11 @@ img.plasicon {
     padding: 80px 0 56px;
   }
 }
-@media (max-width: 425px) {
-  .bmix-section-padding {
-    padding: 60px 0 32px;
-  }
-}
 
 .bmix-section-padding2 {
-  padding: 130px 0;
+  padding: 80px 0 130px;
 }
 @media (max-width: 991px) {
-  .bmix-section-padding2 {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
   .bmix-section-padding2 {
     padding: 80px 0;
   }

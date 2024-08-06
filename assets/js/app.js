@@ -49,13 +49,36 @@
     });
 
     /*--------------------------------------------------------------
-    bmix HERO SLIDER JS INIT
-    --------------------------------------------------------------*/
-
-    /*--------------------------------------------------------------
     bmix COUNTER JS INIT
     --------------------------------------------------------------*/
-
+    var bmix_counter = $('#bmix-counter');
+    if (bmix_counter.is_exist()) {
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $(bmix_counter).offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $('.bmix-counter').each(function () {
+            var $this = $(this),
+              countTo = $this.attr('data-percentage');
+            $({
+              countNum: $this.text()
+            }).animate({
+              countNum: countTo
+            }, {
+              duration: 4000,
+              easing: 'swing',
+              step: function step() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function complete() {
+                $this.text(this.countNum);
+              }
+            });
+          });
+          a = 1;
+        }
+      });
+    }
     /*--------------------------------------------------------------
     bmix TESTIMONIAL SLIDER JS INIT
     --------------------------------------------------------------*/
