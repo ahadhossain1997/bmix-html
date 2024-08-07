@@ -86,9 +86,32 @@
     // bmix SERVICE SLIDER SECTION JS INIT
 
     /*--------------------------------------------------------------
-    bmix SLIDER LOGO JS INIT
+    SOFAX BRAND SLIDER JS INIT
     --------------------------------------------------------------*/
-
+    var brand_slider = $('.bmix-brand-slider');
+    if (brand_slider.is_exist()) {
+      brand_slider.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        arrows: false,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        responsive: [{
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    }
     /*--------------------------------------------------------------
     bmix MAGNIFIC POPUP JS INIT
     ------------------------------------------------------------*/
