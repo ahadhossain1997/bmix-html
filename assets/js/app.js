@@ -82,6 +82,42 @@
     /*--------------------------------------------------------------
     bmix TESTIMONIAL SLIDER JS INIT
     --------------------------------------------------------------*/
+    var t_slider = $('.bmix-t-slider-init');
+    if (t_slider.is_exist()) {
+      t_slider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        dots: true,
+        centerMode: true,
+        centerPadding: '200px',
+        lazyLoad: 'progressive',
+        responsive: [{
+          breakpoint: 1349,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '100px'
+          }
+        }, {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0px'
+          }
+        }]
+      });
+    }
 
     // bmix SERVICE SLIDER SECTION JS INIT
 
