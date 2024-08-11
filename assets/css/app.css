@@ -3578,6 +3578,69 @@ h1.post__title {
 .bmix-iconbox-text p {
   transition: all 0.4s;
 }
+.bmix-iconbox-wrapv3 ul li {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.001em;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 15px;
+}
+.bmix-iconbox-wrapv3 ul li:last-child {
+  margin-bottom: 0;
+}
+.bmix-iconbox-wrapv3 ul li img {
+  padding-right: 8px;
+  width: 30px;
+  margin-bottom: 3px;
+}
+.bmix-iconbox-wrap4 {
+  padding: 30px 26px;
+  text-align: center;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  transition: all 0.4s;
+  background: var(--white-color);
+}
+.bmix-iconbox-icon4 {
+  margin-bottom: 20px;
+}
+.bmix-iconbox-data4 h4 {
+  margin-bottom: 12px;
+}
+.bmix-iconbox-content-wrapper {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .bmix-iconbox-content-wrapper {
+    gap: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .bmix-iconbox-content-wrapper {
+    display: block;
+  }
+}
+
+.about-v4 ul li {
+  margin-bottom: 15px !important;
+}
+
+.about4 {
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--light-color2);
+  margin-bottom: 30px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+@media (max-width: 1199px) {
+  .mr-100 {
+    margin-right: 0;
+  }
+}
 
 .bmix-service-site-btn svg path {
   transition: all 0.4s;
@@ -3594,6 +3657,11 @@ h1.post__title {
 }
 .bmix-process-wrap:hover .bmix-process-number h4 {
   background: var(--white-bg);
+}
+.bmix-process-contact-site {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 .bmix-process-number {
   display: flex;
@@ -3618,12 +3686,24 @@ h1.post__title {
   justify-content: center;
   background: linear-gradient(225deg, #1263FF 0%, #27AFF9 100%);
 }
+.bmix-process-number3 h4 {
+  color: var(--white-color);
+}
 .bmix-process-title h4 {
   color: var(--white-color);
   margin-bottom: 15px;
 }
 .bmix-process-title p {
   color: var(--white-color);
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .mt-40 {
+    margin-top: 30px;
+  }
 }
 
 .ml-51 {
@@ -3646,6 +3726,12 @@ h1.post__title {
 }
 .bmix-popup-video img {
   margin-right: 15px;
+}
+
+.bmix-popup-video2 {
+  position: absolute;
+  top: 44%;
+  right: 47%;
 }
 
 .bmix-t-wrap {
@@ -3699,6 +3785,16 @@ h1.post__title {
   line-height: 22px;
   letter-spacing: -0.001em;
 }
+.bmix-t-wrap3 {
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid var(--light-color2);
+}
+@media (max-width: 991px) {
+  .bmix-t-wrap3 {
+    margin-top: 40px;
+  }
+}
 
 .bmix-t-slider-init .slick-slide {
   margin: 0 12px;
@@ -3722,7 +3818,7 @@ h1.post__title {
   }
 }
 .bmix-t-slider-init ul.slick-dots {
-  bottom: -22%;
+  bottom: -13%;
   right: 45%;
   position: absolute;
   display: flex;
@@ -3755,7 +3851,66 @@ h1.post__title {
   transition: all 0.4s;
 }
 
+.bmix-t-slider-init2 .slick-slide {
+  margin: 0 12px;
+}
+.bmix-t-slider-init2 .slick-dots button {
+  display: block;
+  padding: 0;
+  border: none;
+  text-indent: -9999px;
+  transition: 0.3s;
+  width: 23px;
+  height: 6px;
+  background: rgba(6, 14, 40, 0.1019607843);
+  opacity: 1;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+@media (max-width: 767px) {
+  .bmix-t-slider-init2 .slick-dots button {
+    display: none;
+  }
+}
+.bmix-t-slider-init2 ul.slick-dots {
+  bottom: -13%;
+  right: 45%;
+  position: absolute;
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .bmix-t-slider-init2 ul.slick-dots {
+    right: 40%;
+    bottom: -15%;
+  }
+}
+@media (max-width: 767px) {
+  .bmix-t-slider-init2 ul.slick-dots {
+    display: none;
+  }
+}
+.bmix-t-slider-init2 .slick-dots li.slick-active {
+  background: var(--accent-color);
+  border-radius: 50px;
+  width: 45px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .bmix-t-slider-init2 .slick-dots li.slick-active {
+    display: none;
+  }
+}
+.bmix-t-slider-init2 ul.slick-dots li {
+  transition: all 0.4s;
+}
+
 .cta-sectionv1 h2, .cta-sectionv1 p {
+  color: var(--white-color);
+}
+
+.bmix-cta-section-title h2 {
   color: var(--white-color);
 }
 
@@ -4494,7 +4649,6 @@ a.medicx-connect-login img {
 .bmix-accordion-body {
   display: none;
   padding-top: 15px;
-  padding: 0 90px 0 35px;
 }
 .bmix-accordion-body.default {
   display: block;
@@ -4680,6 +4834,29 @@ img.plasicon {
 
 .bmix-section-padding10 {
   padding: 80px 0 56px;
+}
+
+.bmix-section-padding11 {
+  padding: 130px 0 80px;
+}
+@media (max-width: 991px) {
+  .bmix-section-padding11 {
+    padding: 100px 0 80px;
+  }
+}
+@media (max-width: 767px) {
+  .bmix-section-padding11 {
+    padding: 80px 0;
+  }
+}
+
+.bmix-section-padding12 {
+  padding: 60px 0;
+  background: var(--dark-bg);
+}
+
+.bmix-section-padding13 {
+  padding: 40px 0 80px;
 }
 
 .bmix-section-title {
@@ -5065,7 +5242,64 @@ img.plasicon {
   color: var(--heading-color);
 }
 .bmix-blog-btn-icon svg {
-  margin-left: 10px;
+  margin: 0 0 5px 8px;
+}
+.bmix-blog-wrap2 {
+  border-radius: 10px;
+  margin-bottom: 24px;
+  transition: all 0.4s;
+  padding: 20px;
+  background: var(--white-color);
+  border: 2px solid var(--light-color2);
+}
+.bmix-blog-wrap2:hover {
+  box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.0784313725);
+  background: var(--white-color);
+  border: 2px solid var(--white-color);
+}
+.bmix-blog-wrap2:hover .bmix-blog-img img {
+  transform: scale(1.1);
+}
+.bmix-blog-wrap2:hover .bmix-blog-btn-icon {
+  color: var(--accent-color) !important;
+}
+.bmix-blog-wrap2:hover svg path {
+  stroke: var(--accent-color);
+}
+.bmix-blog-content2 h5 {
+  margin-bottom: 10px;
+}
+.bmix-blog-content2 p {
+  color: var(--body-color);
+}
+.bmix-blog-meta2 {
+  padding: 24px 0;
+}
+.bmix-blog-meta2 ul li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--heading-color);
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+}
+.bmix-blog-meta2 ul li:last-child {
+  margin-right: 0;
+}
+.bmix-blog-meta2 ul li img {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.bmix-blog-btn-icon {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+.bmix-blog-btn-icon svg {
+  margin: 0 0 5px 8px;
 }
 
 .mb-20 {

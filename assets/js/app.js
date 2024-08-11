@@ -119,10 +119,24 @@
       });
     }
 
-    // bmix SERVICE SLIDER SECTION JS INIT
+    /*--------------------------------------------------------------
+    bmix TESTIMONIAL SLIDER JS INIT
+    --------------------------------------------------------------*/
+
+    var t_slider = $('.bmix-t-slider-init2');
+    if (t_slider.is_exist()) {
+      t_slider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        arrows: false,
+        cssEase: 'linear'
+      });
+    }
 
     /*--------------------------------------------------------------
-    SOFAX BRAND SLIDER JS INIT
+    Bmix BRAND SLIDER JS INIT
     --------------------------------------------------------------*/
     var brand_slider = $('.bmix-brand-slider');
     if (brand_slider.is_exist()) {
@@ -147,15 +161,30 @@
           }
         }]
       });
-    }
-    /*--------------------------------------------------------------
-    bmix MAGNIFIC POPUP JS INIT
-    ------------------------------------------------------------*/
+    } /*--------------------------------------------------------------
+      bmix MAGNIFIC POPUP JS INIT
+      ------------------------------------------------------------*/
     var popup_youtube = $('.video-init');
     if (popup_youtube.is_exist()) {
       popup_youtube.magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade'
+      });
+    }
+
+    // Bmix SERVICE SLIDER SECTION JS INIT
+
+    var slider_service_section = $('.bmix-slider-service-section');
+    if (slider_service_section.is_exist()) {
+      slider_service_section.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 12000,
+        arrows: false,
+        pauseOnHover: false,
+        cssEase: 'linear'
       });
     }
   }); /*End document ready*/
