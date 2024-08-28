@@ -118,11 +118,6 @@
         }]
       });
     }
-
-    /*--------------------------------------------------------------
-    bmix TESTIMONIAL SLIDER JS INIT
-    --------------------------------------------------------------*/
-
     var t_slider = $('.bmix-t-slider-init2');
     if (t_slider.is_exist()) {
       t_slider.slick({
@@ -132,6 +127,55 @@
         dots: true,
         arrows: false,
         cssEase: 'linear'
+      });
+    }
+    var t_slider = $('.bmix-testimonial-slider1');
+    if (t_slider.is_exist()) {
+      t_slider.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        arrows: false,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        responsive: [{
+          breakpoint: 1349,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    }
+    var t_slider2 = $('.bmix-testimonial-slider2');
+    if (t_slider2.is_exist()) {
+      t_slider2.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        arrows: false,
+        pauseOnHover: false,
+        rtl: true,
+        cssEase: 'linear',
+        responsive: [{
+          breakpoint: 1349,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
       });
     }
 
