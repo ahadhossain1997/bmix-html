@@ -218,9 +218,9 @@
 
     // Bmix SERVICE SLIDER SECTION JS INIT
 
-    var slider_service_section = $('.bmix-slider-service-section');
-    if (slider_service_section.is_exist()) {
-      slider_service_section.slick({
+    var text_infinite_slider = $('.bmix-infinite-slider');
+    if (text_infinite_slider.is_exist()) {
+      text_infinite_slider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
