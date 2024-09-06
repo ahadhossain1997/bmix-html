@@ -3705,6 +3705,14 @@ i.ri-arrow-right-s-line {
   letter-spacing: -0.001em;
   color: var(--body-color) !important;
 }
+.bmix-counter-data5.data-left {
+  text-align: left;
+}
+@media (max-width: 575px) {
+  .bmix-counter-data5.data-left {
+    text-align: center;
+  }
+}
 .bmix-counter-wrapv7 {
   padding: 40px;
   text-align: center;
@@ -3821,6 +3829,11 @@ i.ri-arrow-right-s-line {
     display: none;
   }
 }
+.border-r8.border-color {
+  border-right: 1px solid var(--light-color4);
+  opacity: 0.5;
+  left: 33%;
+}
 
 .border-r9 {
   position: absolute;
@@ -3835,6 +3848,12 @@ i.ri-arrow-right-s-line {
   .border-r9 {
     display: none;
   }
+}
+.border-r9.border-color {
+  border-right: 1px solid var(--light-color4);
+  opacity: 0.5;
+  top: 22%;
+  left: 70%;
 }
 
 @media (max-width: 991px) {
@@ -4618,13 +4637,6 @@ i.ri-arrow-right-s-line {
   margin-right: 15px;
 }
 
-.bmix-popup-video2 {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
 .bmix-video-thumb {
   text-align: center;
   position: relative;
@@ -4638,23 +4650,16 @@ i.ri-arrow-right-s-line {
   }
 }
 
-.bmix-popup-video3 {
+.bmix-popup-video2 {
+  top: 50%;
+  left: 50%;
   position: absolute;
-  top: 40.5%;
-  right: 42.5%;
-  z-index: 99;
-}
-@media (max-width: 1199px) {
-  .bmix-popup-video3 img {
-    width: 90%;
-  }
+  transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
-  .bmix-popup-video3 {
-    right: 37%;
-  }
-  .bmix-popup-video3 img {
-    width: 70%;
+  .bmix-popup-video2 img {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -4680,6 +4685,44 @@ i.ri-arrow-right-s-line {
     top: -40px;
   }
 }
+.waves.waves2 {
+  left: -55px;
+  top: -55px;
+  background-color: var(--accent-color);
+}
+@media (max-width: 991px) {
+  .waves.waves2 {
+    left: -40px;
+    top: -40px;
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .waves.waves2 {
+    left: -52px;
+    top: -52px;
+  }
+}
+.waves.waves3 {
+  left: -55px;
+  top: -55px;
+  background-color: var(--dark-bg);
+}
+@media (max-width: 991px) {
+  .waves.waves3 {
+    left: -40px;
+    top: -40px;
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .waves.waves3 {
+    left: -52px;
+    top: -52px;
+  }
+}
 .waves.wave-1 {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
@@ -4691,18 +4734,6 @@ i.ri-arrow-right-s-line {
 .waves.wave-3 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
-}
-.waves.waves2 {
-  background: var(--accent-color);
-  z-index: 1;
-  left: 39%;
-  top: 30%;
-}
-@media (max-width: 1199px) {
-  .waves.waves2 {
-    left: 32%;
-    top: 25%;
-  }
 }
 
 @keyframes waves {
@@ -4750,18 +4781,6 @@ i.ri-arrow-right-s-line {
 }
 .bmix-video-thumbv10 img {
   border-radius: 10px;
-}
-
-.bmix-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (max-width: 767px) {
-  .bmix-play-button img {
-    width: 70%;
-  }
 }
 
 .bmix-t-wrap {
@@ -5817,18 +5836,6 @@ i.ri-arrow-right-s-line {
   }
 }
 
-.bmix-about-thumb {
-  position: relative;
-  text-align: center;
-}
-@media (max-width: 991px) {
-  .bmix-about-thumb {
-    margin-bottom: 40px;
-  }
-  .bmix-about-thumb img {
-    width: 100%;
-  }
-}
 .bmix-about-card {
   position: absolute;
   top: 190px;
@@ -7068,6 +7075,60 @@ img.plasicon1 {
   .bmix-about-tab-btn {
     display: block;
   }
+}
+.bmix-about-title-thumb img {
+  border-radius: 10px;
+}
+.bmix-about-us-wrap {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .bmix-about-us-wrap {
+    margin-bottom: 40px;
+  }
+  .bmix-about-us-wrap.mb-0 {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .bmix-about-us-wrap {
+    margin-bottom: 30px;
+  }
+}
+.bmix-about-us-shape {
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .bmix-about-us-shape {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .bmix-about-us-shape {
+    margin-bottom: 30px;
+  }
+}
+.bmix-about-us-date {
+  margin-bottom: 24px;
+}
+.bmix-about-us-date ul li {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: var(--accent-color);
+}
+@media (max-width: 1199px) {
+  .bmix-about-us-shape {
+    display: none;
+  }
+}
+.bmix-about-us-wrap2 {
+  display: flex;
+  justify-content: space-between;
+}
+.bmix-about-us-title h4 {
+  margin-bottom: 15px;
 }
 
 .ml-81 {
